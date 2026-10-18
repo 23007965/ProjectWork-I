@@ -1,0 +1,23 @@
+field_name,definition,unit,source_dataset,transformation,missing_value_meaning,role
+lat_grid,Latitude of grid cell center,decimal degrees,All,Rounded to 0.25 degree grid,N/A,identifier
+lon_grid,Longitude of grid cell center,decimal degrees,All,Rounded to 0.25 degree grid,N/A,identifier
+year_month,Year-month of observation,YYYY-MM,All,Aggregated from raw dates,N/A,identifier
+sea_surface_temperature,Monthly mean SST,degrees Celsius,DS-002,Monthly mean,No oceanographic data for this cell-month,predictor
+salinity,Monthly mean sea surface salinity,PSU,DS-002,Monthly mean,No data,predictor
+dissolved_oxygen,Monthly mean dissolved oxygen,mg/L,DS-002,Monthly mean,No data,predictor
+chlorophyll_a,Monthly mean chlorophyll-a concentration,mg/m3,DS-002,Monthly mean,No data,predictor
+fishing_hours,Total monthly fishing hours in grid cell,hours,DS-003,Monthly sum,No fisheries data,predictor
+vessel_count,Total unique vessels observed in grid cell,count,DS-003,Monthly sum,No data,predictor
+edna_species_richness,Number of unique fish species detected,count,DS-001,Count of unique species per grid-month,No eDNA sampling in this cell-month,predictor/target source
+edna_total_detections,Total occurrence records,count,DS-001,Count of records,No data,predictor
+has_oceanographic,Whether oceanographic data is available,binary (0/1),Derived,Presence indicator,N/A,modality flag
+has_fisheries,Whether fisheries data is available,binary (0/1),Derived,Presence indicator,N/A,modality flag
+has_edna,Whether eDNA/occurrence data is available,binary (0/1),Derived,Presence indicator,N/A,modality flag
+future_fish_species_richness,Target: max species richness in future window,count,DS-001,Max richness in horizon_months after origin,N/A,target
+hist_sea_surface_temperature_mean,Historical mean SST over history window,degrees Celsius,DS-002,Mean over 6 months,NaN if no ocean data in history,predictor
+hist_sea_surface_temperature_std,Historical SST variability,degrees Celsius,DS-002,Std dev over 6 months,0 if <2 months,predictor
+hist_sea_surface_temperature_trend,Historical SST trend,degrees Celsius/month,DS-002,Linear slope over history,0 if <3 months,predictor
+hist_fishing_hours_mean,Historical mean monthly fishing hours,hours,DS-003,Mean over 6 months,NaN if no fisheries data,predictor
+hist_fishing_hours_sum,Historical total fishing hours,hours,DS-003,Sum over 6 months,0,predictor
+hist_edna_species_richness_mean,Historical mean species richness,count,DS-001,Mean over 6 months,NaN if no eDNA in history,predictor
+hist_edna_species_richness_max,Historical max species richness,count,DS-001,Max over 6 months,NaN,predictor

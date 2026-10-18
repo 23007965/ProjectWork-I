@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env
+
+# Data files (large/restricted - reproducible via pipeline)
+data/raw/
+data/processed/
+*.h5
+*.hdf5
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/
+
+# CatBoost training artifacts
+catboost_info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Credentials
+*.key
+*.pem
+credentials.*
+secrets.*
+
+# Model checkpoints and experiment outputs (large/reproducible)
+experiments/
+*.pt
+*.pth
+*.joblib
+
+# Logs
+*.log
+logs/

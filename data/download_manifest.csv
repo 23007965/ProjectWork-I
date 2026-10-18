@@ -1,0 +1,6 @@
+file_name,source_url,retrieval_date,version,file_size_mb,download_status,notes
+obis_fish_occurrences_raw.csv,https://api.obis.org/v3/occurrence,2026-10-18,API v3,15.0,success,50000 records via API pagination
+obis_fish_occurrences_clean.csv,Derived from obis_fish_occurrences_raw.csv,2026-10-18,v1,9.0,success,29640 records after validation
+fish_species_richness_by_location_month.csv,Derived from obis_fish_occurrences_clean.csv,2026-10-18,v1,0.14,success,2576 location-month aggregations
+oceanographic_data.csv,Synthetic (CMEMS patterns),2026-10-18,synthetic_v1,13.0,synthetic,266112 records matching North Sea climatology
+fisheries_effort_data.csv,Synthetic (GFW patterns),2026-10-18,synthetic_v1,9.0,synthetic,266112 records matching North Sea fishing patterns

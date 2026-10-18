@@ -1,0 +1,98 @@
+{
+  "total_records": 268543,
+  "oceanographic": {
+    "sea_surface_temperature": {
+      "count": 266112,
+      "mean": 7.021367506914382,
+      "std": 2.9306141100219496,
+      "min": 0.46,
+      "max": 13.67,
+      "missing_pct": 0.9052553967148651
+    },
+    "salinity": {
+      "count": 266112,
+      "mean": 34.743224356661855,
+      "std": 0.3329872383328253,
+      "min": 33.31,
+      "max": 36.26,
+      "missing_pct": 0.9052553967148651
+    },
+    "dissolved_oxygen": {
+      "count": 266112,
+      "mean": 7.146559042809043,
+      "std": 0.4149179118530709,
+      "min": 5.83,
+      "max": 8.53,
+      "missing_pct": 0.9052553967148651
+    },
+    "chlorophyll_a": {
+      "count": 266112,
+      "mean": 1.5112888595779221,
+      "std": 1.2722520196608609,
+      "min": 0.1,
+      "max": 4.909,
+      "missing_pct": 0.9052553967148651
+    }
+  },
+  "fisheries": {
+    "fishing_hours": {
+      "count": 266112,
+      "mean": 21.33626330266955,
+      "std": 12.819910194149728,
+      "min": 3.1,
+      "max": 157.1,
+      "missing_pct": 0.9052553967148651
+    },
+    "vessel_count": {
+      "count": 266112,
+      "mean": 4.163720538720539,
+      "std": 2.167614922264001,
+      "min": 0.0,
+      "max": 23.0,
+      "missing_pct": 0.9052553967148651
+    }
+  },
+  "edna": {
+    "edna_species_richness": {
+      "count": 2576,
+      "mean": 1.063664596273292,
+      "std": 0.2640675157938698,
+      "min": 1.0,
+      "max": 4.0,
+      "missing_pct": 99.04074952614666
+    },
+    "edna_total_detections": {
+      "count": 2576,
+      "mean": 11.506211180124224,
+      "std": 5.83780450223022,
+      "min": 10.0,
+      "max": 100.0,
+      "missing_pct": 99.04074952614666
+    },
+    "has_edna": {
+      "count": 268543,
+      "mean": 0.009592504738533493,
+      "std": 0.09747063131739163,
+      "min": "0",
+      "max": "1",
+      "missing_pct": 0.0
+    }
+  },
+  "coverage": {
+    "has_oceanographic": {
+      "present": 266112,
+      "missing": 2431,
+      "coverage_pct": 99.09474460328514
+    },
+    "has_fisheries": {
+      "present": 266112,
+      "missing": 2431,
+      "coverage_pct": 99.09474460328514
+    },
+    "has_edna": {
+      "present": 2576,
+      "missing": 265967,
+      "coverage_pct": 0.9592504738533493
+    }
+  }
+}
