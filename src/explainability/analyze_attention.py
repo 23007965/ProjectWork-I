@@ -141,7 +141,9 @@ def main():
     test = df[df["split"] == "test"]
     X_test = test[feature_groups["all"]].fillna(0)
 
-    from src.models.cross_modal_attention import CrossModalAttentionModel
+    import sys
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "models"))
+    from cross_modal_attention import CrossModalAttentionModel
 
     model_cfg = config["models"]["cross_modal_attention"]
     ocean_dim = max(len(feature_groups.get("oceanographic", [])), 1)

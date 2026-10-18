@@ -43,7 +43,7 @@ def evaluate_with_forced_mask(
     model, X_test, y_test, feature_groups, mask_pattern, batch_size=32,
 ):
     """Evaluate model with a forced modality mask pattern."""
-    from src.models.cross_modal_attention import CrossModalTrainer
+    pass  # CrossModalTrainer not needed for inference
 
     model.eval()
     X_df = pd.DataFrame(X_test) if not isinstance(X_test, pd.DataFrame) else X_test
@@ -113,7 +113,9 @@ def main():
     y_test = test["future_fish_species_richness"].values
 
     # Load model
-    from src.models.cross_modal_attention import CrossModalAttentionModel
+    import sys
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "models"))
+    from cross_modal_attention import CrossModalAttentionModel
 
     model_cfg = config["models"]["cross_modal_attention"]
     ocean_dim = max(len(feature_groups.get("oceanographic", [])), 1)

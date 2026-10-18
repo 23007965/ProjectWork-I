@@ -1,0 +1,11 @@
+feature,mean_abs_shap
+longitude,0.0215684659183274
+latitude,0.020685392743504533
+origin_month_sin,0.008949497787721873
+hist_edna_total_detections_max,0.0073231014837192125
+hist_edna_species_richness_max,0.006758705662427246
+hist_edna_total_detections_mean,0.004879046734353628
+hist_edna_total_detections_latest,0.00429644174934379
+origin_month_cos,0.004045309867822485
+hist_edna_species_richness_latest,0.003917307724386031
+hist_edna_species_richness_mean,0.0022537360452186453
